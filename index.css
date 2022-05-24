@@ -1,0 +1,37 @@
+li {
+    padding: 10px;
+}
+
+.section-hot li:hover {
+    background-color: goldenrod;
+}
+
+.section-hot .footer {
+    color: goldenrod;
+}
+
+.section-hot h2 {
+    background-color: goldenrod;
+}
+
+
+.section-health li:hover {
+    background-color: cadetblue;
+}
+
+.section-health .footer {
+    color: cadetblue;
+}
+
+.section-health h2 {
+    background-color: cadetblue;
+}
+
+h2 {
+    color: white;
+    padding: 10px;
+}
+
+li:hover a {
+    color: white
+}
