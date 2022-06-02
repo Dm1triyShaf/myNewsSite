@@ -1,3 +1,5 @@
+
+
 var slider1 = {
     imagesUrls: [],
     currentImageIndex: 0,
@@ -5,6 +7,7 @@ var slider1 = {
     showNextBtn: document.getElementById('show-next-btn'),
     slideImage: document.getElementById('slide-img'),
 
+    
     start: function () {
         this.showPrevBtn.addEventListener('click', this.onShowPrevBtnClick);
         this.showNextBtn.addEventListener('click', this.onShowNextBtnClick);
@@ -14,7 +17,7 @@ var slider1 = {
         this.imagesUrls.push('https://zelenyjmir.ru/wp-content/uploads/2017/06/Mops-17.jpg');
         this.imagesUrls.push('https://99px.ru/sstorage/53/2012/08/mid_47709_5099.jpg');
 
-        this.slideImage.src = this.imagesUrls(this.currentImageIndex); 
+        this.slideImage.src = this.imagesUrls[this.currentImageIndex]; 
         this.showPrevBtn.disablet = true;
     },
 
@@ -24,7 +27,7 @@ var slider1 = {
         this.showNextBtn.disablet = false;
 
         if (this.currentImageIndex === 0) {
-            showPrevBtn.disablet = true;
+            this.showPrevBtn.disablet = true;
         }
     },
 
@@ -38,3 +41,6 @@ var slider1 = {
         }
     }
 };
+slider1.start (this.currentImageIndex);
+
+debugger
